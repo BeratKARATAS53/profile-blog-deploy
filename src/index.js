@@ -24,6 +24,7 @@ import "assets/scss/blk-design-system-react.scss?v=1.1.0";
 import "assets/demo/demo.css";
 
 import Index from "views/Index.js";
+import MainPage from "views/MainPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
@@ -44,7 +45,11 @@ ReactDOM.render(
         path="/profile-page"
         render={props => <ProfilePage {...props} />}
       />
-      <Redirect from="/" to="/components" />
+      <Route
+        path="/anasayfa"
+        render={props => <MainPage {...props} />}
+      />
+      <Redirect from="/" to="/anasayfa" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
