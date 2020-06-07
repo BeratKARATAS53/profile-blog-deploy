@@ -33,7 +33,6 @@ import {
 
 // core components
 import ExamplesNavbarMin from "components/Navbars/ExamplesNavbar.js";
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import ImageGrid from "components/ImageGrid/ImageGrid.js";
 import Projects from "components/Projects";
