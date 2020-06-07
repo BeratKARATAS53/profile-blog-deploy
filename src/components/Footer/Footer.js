@@ -16,12 +16,9 @@
 
 */
 import React from "react";
-import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  NavItem,
   NavLink,
-  Nav,
   Container,
   Row,
   Col,
@@ -33,17 +30,8 @@ class Footer extends React.Component {
       <footer className="footer">
         <Container>
           <Row>
-            <Col md="5">
+            <Col md="9">
               <h1 className="title">D• Berat Karatas</h1>
-            </Col>
-            <Col md="4">
-              <Nav>
-                <NavItem>
-                  <NavLink to="/" tag={Link}>
-                    Anasayfa
-                  </NavLink>
-                </NavItem>
-              </Nav>
             </Col>
             <Col md="3">
               <NavLink>Creative Team</NavLink>

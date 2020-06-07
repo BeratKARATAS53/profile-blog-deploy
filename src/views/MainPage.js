@@ -29,31 +29,14 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
-  UncontrolledCarousel,
 } from "reactstrap";
 
 // core components
 import ExamplesNavbarMin from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import ImageGrid from "components/ImageGrid/ImageGrid.js";
-
-const carouselItems = [
-  {
-    src: require("assets/img/pet-adoption.png"),
-    altText: "Slide 1",
-    caption: "Pet Adoption Web Platform",
-  },
-  {
-    src: require("assets/img/fabien-bazanegue.jpg"),
-    altText: "Slide 2",
-    caption: "Somewhere Beyond, United States",
-  },
-  {
-    src: require("assets/img/mark-finn.jpg"),
-    altText: "Slide 3",
-    caption: "Stocks, United States",
-  },
-];
+import Projects from "components/Projects";
 
 let ps = null;
 
@@ -474,32 +457,11 @@ class MainPage extends React.Component {
           </div>
           <div className="section">
             <Container>
-              <Row className="justify-content-between">
-                <Col md="6">
-                  <Row className="justify-content-between align-items-center">
-                    <UncontrolledCarousel items={carouselItems} />
-                  </Row>
-                </Col>
-                <Col md="5">
+              <Row className="justify-content-center">
+                <Col md="11">
                   <h1 className="profile-title text-left">Projelerim</h1>
                   <h5 className="text-on-back">04</h5>
-                  <p className="profile-description text-left">
-                    An artist of considerable range, Ryan — the name taken by
-                    Melbourne-raised, Brooklyn-based Nick Murphy — writes,
-                    performs and records all of his own music, giving it a warm,
-                    intimate feel with a solid groove structure. An artist of
-                    considerable range.
-                  </p>
-                  <div className="btn-wrapper pt-3">
-                    <Button
-                      className="btn-simple"
-                      color="primary"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="tim-icons icon-book-bookmark" /> Ayrıntılar
-                    </Button>
-                  </div>
+                  <Projects />
                 </Col>
               </Row>
             </Container>
