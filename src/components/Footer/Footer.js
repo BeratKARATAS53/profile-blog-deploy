@@ -17,12 +17,7 @@
 */
 import React from "react";
 // reactstrap components
-import {
-  NavLink,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+import { NavLink, Container, Row, Col } from "reactstrap";
 
 class Footer extends React.Component {
   render() {

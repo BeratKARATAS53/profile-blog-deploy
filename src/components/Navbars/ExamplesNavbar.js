@@ -35,7 +35,7 @@ class PagesNavbar extends React.Component {
     super(props);
     this.state = {
       collapseOpen: false,
-      color: "navbar-transparent"
+      color: "navbar-transparent",
     };
   }
   componentDidMount() {
@@ -50,31 +50,31 @@ class PagesNavbar extends React.Component {
       document.body.scrollTop > 99
     ) {
       this.setState({
-        color: "bg-info"
+        color: "bg-info",
       });
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
     ) {
       this.setState({
-        color: "navbar-transparent"
+        color: "navbar-transparent",
       });
     }
   };
   toggleCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     this.setState({
-      collapseOpen: !this.state.collapseOpen
+      collapseOpen: !this.state.collapseOpen,
     });
   };
   onCollapseExiting = () => {
     this.setState({
-      collapseOut: "collapsing-out"
+      collapseOut: "collapsing-out",
     });
   };
   onCollapseExited = () => {
     this.setState({
-      collapseOut: ""
+      collapseOut: "",
     });
   };
   render() {
@@ -86,11 +86,7 @@ class PagesNavbar extends React.Component {
       >
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand
-              to="/"
-              id="navbar-brand"
-              tag={Link}
-            >
+            <NavbarBrand to="/" id="navbar-brand" tag={Link}>
               <span>D• </span>
               Berat Karatas
             </NavbarBrand>
@@ -114,8 +110,8 @@ class PagesNavbar extends React.Component {
             <div className="navbar-collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
-                  <a href="#pablo" onClick={e => e.preventDefault()}>
-                    BLK•React
+                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    D•Berat Karataş
                   </a>
                 </Col>
                 <Col className="collapse-close text-right" xs="6">
