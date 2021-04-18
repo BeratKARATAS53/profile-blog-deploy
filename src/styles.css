@@ -1,0 +1,124 @@
+:root  {
+	--gray-color: #acacac;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	/*font-family: 'Chakra Petch', sans-serif;*/
+	font-family: 'Philosopher', sans-serif;
+	text-shadow: 2px 2px 2px #606C88;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 22px;
+}
+
+body {
+	background: linear-gradient(to right, #606C88, #3F4C6B);
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+	margin: 0 20rem;
+}
+
+.menu-title {
+	font-size: 32px;
+}
+
+.menu-items {
+	display: flex;
+	justify-content: space-around;
+	width: 750px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	height: 500px;
+	margin: 15rem 20rem;
+}
+
+.summary {
+	width: 60%;
+	line-height: 50px;
+	margin-right: 14rem;
+}
+
+.summary h2 {
+	font-family: 'Righteous', cursive;
+	margin-bottom: 28px;
+	font-size: 32px;
+}
+
+.summary .social-links {
+	font-size: 22px;
+}
+
+.summary .social-links i {
+	margin-right: 20px;
+}
+
+.summary h6 {
+	font-size: 24px;
+}
+
+.info-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 500px;
+	width: 500px;
+	border-radius: 10%;
+	background-color: #cbc7c74f;
+}
+
+.info {
+	line-height: 60px;
+}
+
+.info i {
+	margin-right: 5px;
+}
+
+.rounded-img {
+	width: 128px;
+	height: 128px;
+	background-color: #acacac;
+	border-radius: 50%;
+}
+
+.rounded-img img {
+	width: 118px;
+	height: 118px;
+	border-radius: 50%;
+	object-fit: cover;
+	padding: 5px;
+}
+
+hr {
+	margin: 0 250px;
+	border-color: #acacac;
+}
+.text-muted {
+	color: var(--gray-color);
+}
