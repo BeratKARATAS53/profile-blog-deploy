@@ -37,7 +37,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	height: 150px;
-	margin: 0 20rem;
+	margin: 0 10rem;
 }
 
 .menu-title {
@@ -50,11 +50,16 @@ body {
 	width: 750px;
 }
 
+main {
+	height: 100%;
+}
+
 .header {
 	display: flex;
 	align-items: center;
-	height: 500px;
-	margin: 15rem 20rem;
+	flex-grow: 2;
+	height: 300px;
+	margin: 15rem 10rem;
 }
 
 .summary {
@@ -116,9 +121,14 @@ body {
 }
 
 hr {
-	margin: 0 250px;
+	margin: 0 10rem;
 	border-color: #acacac;
 }
+
 .text-muted {
 	color: var(--gray-color);
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
