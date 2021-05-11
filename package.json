@@ -32,7 +32,7 @@
     "url": "https://github.com/creativetimofficial/blk-design-system-react/issues"
   },
   "dependencies": {
-    "chart.js": "2.9.3",
+    "chart.js": "2.9.4",
     "classnames": "2.2.6",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
