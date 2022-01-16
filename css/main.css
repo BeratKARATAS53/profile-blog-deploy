@@ -1668,7 +1668,7 @@ input::-moz-focus-inner {
 
 .s-header.sticky .header-logo img {
   width: 50px;
-  height: 30px;
+  height: 37px;
 }
 
 .s-header.sticky .header-content .btn {
@@ -3495,4 +3495,24 @@ html.no-csstransitions .hero-content {
 	bottom: 4rem;
   }
 
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: #3c3c54;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #f99224bb;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #f99224;
 }
